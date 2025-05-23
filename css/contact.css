@@ -1,0 +1,36 @@
+p{
+    font-size: 1.7em;
+}
+div{
+    color: black;
+    background-color: black;
+}
+nav{
+    font-size: 2em;
+}
+
+nav, div{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.danse{
+    width: 500px;
+    height:auto;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.75em;
+}
+
+h2 {
+text-decoration: underline;
+}
+
+.Localisation{
+    text-decoration: underline;
+    font-family: 'Hyperwave', sans-serif;
+    font-size: 4em;
+}
