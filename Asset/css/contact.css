@@ -1,12 +1,13 @@
-p{
-    font-size: 1.7em;
+.contact{
+    font-size: 1.7rem;
 }
+
 div{
     color: black;
     background-color: black;
 }
 nav{
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 nav, div{
@@ -22,14 +23,13 @@ nav, div{
 
 footer{
     text-align: center;
-    font-size: 0.75em;
 }
 h1{
     text-align : center;
     text-decoration: underline;
     text-decoration-color: #faa300;
     font-family: 'Hyperwave', sans-serif;
-    font-size: 5em;
+    font-size: 5rem;
 }
 
 h2 {
@@ -40,6 +40,6 @@ text-decoration-color: #faa300;
 .Localisation{
     text-decoration: underline;
     font-family: 'Hyperwave', sans-serif;
-    font-size: 4em;
+    font-size: 4rem;
     text-decoration-color: #faa300;
 }
