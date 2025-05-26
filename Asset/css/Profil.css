@@ -17,6 +17,10 @@ strong, .link, h1{
     color: blueviolet;
 }
 
+.description{
+    text-align: justify; 
+}
+
 /*animation carte*/
 .photo1{
     width: 300px;
@@ -36,11 +40,13 @@ strong, .link, h1{
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.6s;
+    transition: transform 1s;
     transform-style: preserve-3d;
 }
 
+
 .card:hover .card-inner {
+    touch-action: auto;
     transform: rotateY(180deg);
 }
 
@@ -79,6 +85,9 @@ button{
 
 h2{
     text-decoration: underline;
+    text-decoration-color: blueviolet;
+    font-family: 'Hyperwave', sans-serif;
+    font-size: 3em;
 }
 
 p{
@@ -96,4 +105,26 @@ strong{
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.5em;
   font-style: normal;
+}
+
+.Questce-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5%;
+    flex-wrap: wrap;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.bouton {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    flex-direction: row;
 }

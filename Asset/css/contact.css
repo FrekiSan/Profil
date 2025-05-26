@@ -24,13 +24,22 @@ footer{
     text-align: center;
     font-size: 0.75em;
 }
+h1{
+    text-align : center;
+    text-decoration: underline;
+    text-decoration-color: #faa300;
+    font-family: 'Hyperwave', sans-serif;
+    font-size: 5em;
+}
 
 h2 {
 text-decoration: underline;
+text-decoration-color: #faa300;
 }
 
 .Localisation{
     text-decoration: underline;
     font-family: 'Hyperwave', sans-serif;
     font-size: 4em;
+    text-decoration-color: #faa300;
 }

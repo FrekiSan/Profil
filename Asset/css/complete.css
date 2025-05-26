@@ -7,6 +7,8 @@
     cursor: crosshair;
     background-color: black;
     color : white;
+    touch-action: auto;
+    text-wrap: balance;
 }
 
 .fond{
@@ -22,7 +24,8 @@ audio{
     text-align: center;
 }
 /*je n'ai pas sticky le header et/ou le footer parce que je trouve de base que c'est plus embetant qu'autre chose*/
-/*Ico bug mieux vaux prevenir que guérir @font-face {
+/*Ico bug mieux vaux prevenir que guérir 
+@font-face {
     font-family : 'Hyperwave';
     src: url(../Index/font/Hyperwave.otf) format('truetype');
 
