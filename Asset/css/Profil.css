@@ -1,4 +1,4 @@
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
     header{
         margin: auto;
         width: 100%;
@@ -12,7 +12,6 @@
         font-size: 1.2rem;
     }
 }
-
 
 p, ul, .solo{
     font-size: 1.5rem;
@@ -188,6 +187,7 @@ ul.site li {
     align-items: center;
     text-align: center;
 }
+
 /*Couleurs des icones selon la plateforme*/
 .fa-github {
     color: #f6c9fa;
