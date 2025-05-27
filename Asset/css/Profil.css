@@ -1,35 +1,41 @@
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
-    header{
-        margin: auto;
-        width: 100%;
-        height: 100%;
-    }
-    h2 {
+/*Font Family*/
+h2 {
         font-size: 2.5rem;
     }
 
-    ul.site li, p, .solo {
+ul.site li, p, .solo {
         font-size: 1.2rem;
     }
-}
 
 p, ul, .solo{
     font-size: 1.5rem;
 }
+
 summary{
     font-size: 2rem;
 }
-#id{
-    font-size: 1rem
+
+h1{
+    font-family: 'Hyperwave', sans-serif;
+} 
+
+/*font dans le complete.css*/
+h1{
+    font-size: 5rem;
 }
+
+strong{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.7rem;
+  font-style: normal;
+}
+
+/*Fin Font Family*/
 
 header{
     background-color: #513074;
     background-image: url(../img/fond2.png);
     background-size: cover;
-}
-.troll{
-    text-decoration-line: line-through;
 }
 
 strong, .link, h1{
@@ -39,81 +45,104 @@ strong, .link, h1{
 .description{
     text-align: justify; 
 }
+/*Responsive*/
 
-/*animation carte*/
+/*Responsive Pc*/
 @media screen and (min-width: 1224px) {
-    
+    header{
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+
     .photo1{
-    width: 440px;
-    height: 806px;    
-    display: block;
-}
+        width: 440px;
+        height: 806px;    
+        display: block;
+    }
 
     .card {
-    position: relative;
-    width: 440px;
-    height: 806px;
-    margin: 2rem auto;
-    perspective: 1000px;
-}
+        position: relative;
+        width: 440px;
+        height: 806px;
+        margin: 2rem auto;
+        perspective: 1000px;
+    }
     
    .Questce-grid{
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
     }
 }
+
+/*Responsive Tablette*/
 @media screen and (min-width: 768px) and (max-width: 1224px) {
+    header{
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+
     .photo1{
-    width: 340px;
-    height: 624px;    
-    display: block;
-}
+        width: 340px;
+        height: 624px;    
+        display: block;
+    }
 
     .card {
-    position: relative;
-    width: 340px;
-    height: 624px;   
-    margin: 2rem auto;
-    perspective: 1000px;
-}
+        position: relative;
+        width: 340px;
+        height: 624px;   
+        margin: 2rem auto;
+        perspective: 1000px;
+    }
 
     .Questce-grid {
-    grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width: 767px) {
-    .photo1{
-    width: 221px;
-    height: 404px;    
-    display: block;
-}
 
-    .card {
-    position: relative;
-    width: 221px;
-    height: 404px;    
-    margin: 2rem auto;
-    perspective: 1000px;
-}
-    .Questce-grid {
-    grid-template-columns: 1fr;
+/*Responsive Mobile*/
+@media screen and (max-width: 767px) {
+     header{
+        margin: auto;
+        width: 100%;
+        height: 100%;
     }
     
+    .photo1{
+        width: 221px;
+        height: 404px;    
+        display: block;
+    }
+
+    .card {
+        position: relative;
+        width: 221px;
+        height: 404px;    
+        margin: 2rem auto;
+        perspective: 1000px;
+    }
+
+    .Questce-grid {
+    grid-template-columns: 1fr;
+    } 
 }
 
+/*Responsive image*/
+@media screen and (max-width: 1224px) and (hover: hover) and (pointer: fine) {
+    .card{
+        cursor:cell;
+    }
+}
+/*Fin Responsive*/
 
-
+/*animation carte*/
 .card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
-}
-
-@media(hover: hover) and (pointer: fine) {
-    .card{
-        cursor: pointer;
-    }
 }
 
 .card:hover .card-inner {
@@ -142,16 +171,15 @@ strong, .link, h1{
 }
 /*fin animation carte*/
 
-ul{
-    list-style-type: none;
+.site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-button{
-    font-size: 1.5rem;;
-    background-color: #8D4FFF;
-    color:black;
-    text-align: center;
-    border-radius: 10px;
+ul{
+    list-style-type: none;
 }
 
 h2{
@@ -168,31 +196,14 @@ p{
     text-align:center;
 }
 
-h1{
-    font-family: 'Hyperwave', sans-serif;
-} 
-
-/*font dans le complete.css*/
-h1{
-    font-size: 5rem;
-}
-
-strong{
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1.7rem;
-  font-style: normal;
-}
-
 .Questce-grid {
     display: grid;
-;
     gap: 2rem;
     padding: 2rem 5%;
     flex-wrap: wrap;
 }
 
-
-.Questce-grid section > h2 {
+.Questce-grid article > h2 {
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -214,27 +225,8 @@ ul.site li {
     margin-bottom: 0.5rem;
 }
 
-.destination-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.bouton-grid {
-    display: flex;
-    flex-direction: row;
-    padding-top: 2rem;
-    gap: 5rem;
-    justify-content:center;
-}
-
-.site {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.troll{
+    text-decoration-line: line-through;
 }
 
 /*Couleurs des icones selon la plateforme*/
@@ -259,4 +251,20 @@ ul.site li {
 
 .fa-x-twitter {
     color: #ffffff;
+}
+
+button, button a{
+    border-radius: 5px;
+    background-color: #8D4FFF;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton-grid {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    gap: 5rem;
+    justify-content:center;
 }
