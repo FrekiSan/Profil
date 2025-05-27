@@ -41,19 +41,66 @@ strong, .link, h1{
 }
 
 /*animation carte*/
-.photo1{
+@media screen and (min-width: 1224px) {
+    
+    .photo1{
     width: 440px;
     height: 806px;    
     display: block;
 }
 
-.card {
+    .card {
     position: relative;
     width: 440px;
     height: 806px;
     margin: 2rem auto;
     perspective: 1000px;
 }
+    
+   .Questce-grid{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1224px) {
+    .photo1{
+    width: 340px;
+    height: 624px;    
+    display: block;
+}
+
+    .card {
+    position: relative;
+    width: 340px;
+    height: 624px;   
+    margin: 2rem auto;
+    perspective: 1000px;
+}
+
+    .Questce-grid {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 767px) {
+    .photo1{
+    width: 221px;
+    height: 404px;    
+    display: block;
+}
+
+    .card {
+    position: relative;
+    width: 221px;
+    height: 404px;    
+    margin: 2rem auto;
+    perspective: 1000px;
+}
+    .Questce-grid {
+    grid-template-columns: 1fr;
+    }
+    
+}
+
+
 
 .card-inner {
     position: relative;
@@ -123,7 +170,9 @@ p{
 
 h1{
     font-family: 'Hyperwave', sans-serif;
-} /*font dans le complete.css*/
+} 
+
+/*font dans le complete.css*/
 h1{
     font-size: 5rem;
 }
@@ -133,22 +182,7 @@ strong{
   font-size: 1.7rem;
   font-style: normal;
 }
-@media screen and (min-width: 1224px) {
-   .Questce-grid{
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1224px) {
-    .Questce-grid {
-    grid-template-columns: 1fr 1fr;
-    }
-}
-@media screen and (max-width: 767px) {
-    .Questce-grid {
-    grid-template-columns: 1fr;
-    }
-    
-}
+
 .Questce-grid {
     display: grid;
 ;
