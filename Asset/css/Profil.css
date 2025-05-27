@@ -133,10 +133,25 @@ strong{
   font-size: 1.7rem;
   font-style: normal;
 }
-
+@media screen and (min-width: 1224px) {
+   .Questce-grid{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1224px) {
+    .Questce-grid {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 767px) {
+    .Questce-grid {
+    grid-template-columns: 1fr;
+    }
+    
+}
 .Questce-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+;
     gap: 2rem;
     padding: 2rem 5%;
     flex-wrap: wrap;
