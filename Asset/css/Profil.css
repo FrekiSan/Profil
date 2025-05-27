@@ -19,6 +19,9 @@ h1{
     font-family: 'Hyperwave', sans-serif;
 } 
 
+.solo2{
+    font-size:1rem;
+}
 /*font dans le complete.css*/
 h1{
     font-size: 5rem;
@@ -253,12 +256,15 @@ ul.site li {
     color: #ffffff;
 }
 
-button, button a{
-    border-radius: 5px;
+
+.fa-address-card, .fa-arrow-up-short-wide {
     background-color: #8D4FFF;
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
+}
+
+.fa-brands, .fa-arrow-up-short-wide, .fa-address-card{
+    width: 2.5rem;
+    height: 2.3rem;
+    font-size: 2rem;
 }
 
 .bouton-grid {
